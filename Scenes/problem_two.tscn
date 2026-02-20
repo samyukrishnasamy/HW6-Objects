@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=4 uid="uid://djch7c2b42lb0"]
+[gd_scene load_steps=6 format=4 uid="uid://djch7c2b42lb0"]
 
-[ext_resource type="Script" path="res://Scripts/Rotate.gd" id="1_6drm6"]
+[ext_resource type="Script" uid="uid://bpyl7ep5g5y4k" path="res://Scripts/Rotate.gd" id="1_6drm6"]
 [ext_resource type="PackedScene" uid="uid://7le76tsvkmlt" path="res://Scenes/player.tscn" id="2_txtmd"]
 [ext_resource type="TileSet" uid="uid://dv5pq4cqkyek7" path="res://Scenes/castle_tileset.tres" id="3_fau27"]
 [ext_resource type="PackedScene" uid="uid://cj1vyr6kvr67l" path="res://Scenes/crate.tscn" id="4_5fnyh"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_62tv5"]
+friction = 10.0
+rough = true
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_6drm6")
@@ -36,4 +40,6 @@ text = "What manner of Crate is this! We do not live in a hockey rink, this is t
 Change some of its settings to make it behave."
 
 [node name="Crate" parent="." instance=ExtResource("4_5fnyh")]
-position = Vector2(456, 384)
+position = Vector2(516, 352)
+physics_material_override = SubResource("PhysicsMaterial_62tv5")
+gravity_scale = 1.0
