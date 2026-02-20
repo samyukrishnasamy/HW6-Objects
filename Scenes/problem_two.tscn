@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://cj1vyr6kvr67l" path="res://Scenes/crate.tscn" id="4_5fnyh"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_62tv5"]
-friction = 10.0
 rough = true
 
 [node name="Node2D" type="Node2D"]
