@@ -4,6 +4,7 @@
 - added two walls
 
 ## problem two:
+- added physics to rigid body
 - added gravtity and friction to the crate
 
 ## problem three:
@@ -12,4 +13,4 @@
 
  ## problem four
  - added a collision shape to the character body
- - deleted the static body of the tree so that the character can move past the tree
+ - disabled collision shape of the tree so that the character can move past the tree
